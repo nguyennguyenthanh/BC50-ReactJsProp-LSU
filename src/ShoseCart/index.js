@@ -123,9 +123,14 @@ export default class ShoesStore extends Component {
                   <td>{productDetail.description}</td>
                 </tr>
                 <tr>
-                  <td>Quantity</td>
-                  <td>{productDetail.quantity}$</td>
+                  <td>ShortDescription</td>
+                  <td>{productDetail.shortDescription}</td>
                 </tr>
+                <tr>
+                  <td>Quantity</td>
+                  <td>{productDetail.quantity}</td>
+                </tr>
+
               </tbody>
             </table>
           </div>

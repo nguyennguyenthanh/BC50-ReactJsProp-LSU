@@ -10,12 +10,12 @@ export default class Productitem extends Component {
           <div className="card-body">
             <h2 className="card-title text-center">{product.name}</h2>
             <h3 className="card-title text-center">{product.price}$</h3>
-            <h4 className="card-title text-center text-danger"> Quantity is Only {product.quantity}</h4> 
-            <h6 className="card-title">{product.description}</h6>
+            <h4 className="card-title text-center text-danger"> Quantity is Only {product.quantity}</h4>
+            <h6 className="card-title">{product.description.length > 80 ? product.description.substr(0,80) + '...' : product.description}</h6>           
             <button className="btn btn-info" onClick={() => {
               getDetailProduct(product);
             }}>Chi tiết</button>
-            <button className="btn btn-danger ml-2" onClick={()=>{
+            <button className="btn btn-danger ml-2" onClick={() => {
               getProductAddCart(product);
             }}>Thêm giỏ hàng</button>
           </div>
